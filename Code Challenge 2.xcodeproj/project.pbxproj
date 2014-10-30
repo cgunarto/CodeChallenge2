@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		4F12CD931A02E363002D45A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CD921A02E363002D45A1 /* main.m */; };
 		4F12CD961A02E363002D45A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CD951A02E363002D45A1 /* AppDelegate.m */; };
-		4F12CD991A02E363002D45A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CD981A02E363002D45A1 /* ViewController.m */; };
+		4F12CD991A02E363002D45A1 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CD981A02E363002D45A1 /* RootViewController.m */; };
 		4F12CD9C1A02E363002D45A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F12CD9A1A02E363002D45A1 /* Main.storyboard */; };
 		4F12CD9E1A02E363002D45A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F12CD9D1A02E363002D45A1 /* Images.xcassets */; };
 		4F12CDA11A02E363002D45A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F12CD9F1A02E363002D45A1 /* LaunchScreen.xib */; };
 		4F12CDAD1A02E363002D45A1 /* Code_Challenge_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CDAC1A02E363002D45A1 /* Code_Challenge_2Tests.m */; };
+		4F12CDB81A02E5A4002D45A1 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CDB71A02E5A4002D45A1 /* City.m */; };
+		4F12CDBC1A02EB47002D45A1 /* CityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CDBB1A02EB47002D45A1 /* CityDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		4F12CD921A02E363002D45A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4F12CD941A02E363002D45A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F12CD951A02E363002D45A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4F12CD971A02E363002D45A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4F12CD981A02E363002D45A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4F12CD971A02E363002D45A1 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4F12CD981A02E363002D45A1 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4F12CD9B1A02E363002D45A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F12CD9D1A02E363002D45A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4F12CDA01A02E363002D45A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4F12CDA61A02E363002D45A1 /* Code Challenge 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Code Challenge 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F12CDAB1A02E363002D45A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F12CDAC1A02E363002D45A1 /* Code_Challenge_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Code_Challenge_2Tests.m; sourceTree = "<group>"; };
+		4F12CDB61A02E5A4002D45A1 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		4F12CDB71A02E5A4002D45A1 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		4F12CDBA1A02EB47002D45A1 /* CityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDetailViewController.h; sourceTree = "<group>"; };
+		4F12CDBB1A02EB47002D45A1 /* CityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,11 @@
 			children = (
 				4F12CD941A02E363002D45A1 /* AppDelegate.h */,
 				4F12CD951A02E363002D45A1 /* AppDelegate.m */,
-				4F12CD971A02E363002D45A1 /* ViewController.h */,
-				4F12CD981A02E363002D45A1 /* ViewController.m */,
+				4F12CD971A02E363002D45A1 /* RootViewController.h */,
+				4F12CD981A02E363002D45A1 /* RootViewController.m */,
+				4F12CDBA1A02EB47002D45A1 /* CityDetailViewController.h */,
+				4F12CDBB1A02EB47002D45A1 /* CityDetailViewController.m */,
+				4F12CDB91A02E5A8002D45A1 /* Model */,
 				4F12CD9A1A02E363002D45A1 /* Main.storyboard */,
 				4F12CD9D1A02E363002D45A1 /* Images.xcassets */,
 				4F12CD9F1A02E363002D45A1 /* LaunchScreen.xib */,
@@ -117,6 +126,15 @@
 				4F12CDAB1A02E363002D45A1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F12CDB91A02E5A8002D45A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F12CDB61A02E5A4002D45A1 /* City.h */,
+				4F12CDB71A02E5A4002D45A1 /* City.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F12CD991A02E363002D45A1 /* ViewController.m in Sources */,
+				4F12CD991A02E363002D45A1 /* RootViewController.m in Sources */,
 				4F12CD961A02E363002D45A1 /* AppDelegate.m in Sources */,
+				4F12CDB81A02E5A4002D45A1 /* City.m in Sources */,
+				4F12CDBC1A02EB47002D45A1 /* CityDetailViewController.m in Sources */,
 				4F12CD931A02E363002D45A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
