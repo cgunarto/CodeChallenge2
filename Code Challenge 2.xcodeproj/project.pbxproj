@@ -16,6 +16,7 @@
 		4F12CDAD1A02E363002D45A1 /* Code_Challenge_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CDAC1A02E363002D45A1 /* Code_Challenge_2Tests.m */; };
 		4F12CDB81A02E5A4002D45A1 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CDB71A02E5A4002D45A1 /* City.m */; };
 		4F12CDBC1A02EB47002D45A1 /* CityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CDBB1A02EB47002D45A1 /* CityDetailViewController.m */; };
+		4F2BE99D1A03014800E78657 /* WikipediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2BE99C1A03014800E78657 /* WikipediaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		4F12CDB71A02E5A4002D45A1 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		4F12CDBA1A02EB47002D45A1 /* CityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDetailViewController.h; sourceTree = "<group>"; };
 		4F12CDBB1A02EB47002D45A1 /* CityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDetailViewController.m; sourceTree = "<group>"; };
+		4F2BE99B1A03014800E78657 /* WikipediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikipediaViewController.h; sourceTree = "<group>"; };
+		4F2BE99C1A03014800E78657 /* WikipediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikipediaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				4F12CD981A02E363002D45A1 /* RootViewController.m */,
 				4F12CDBA1A02EB47002D45A1 /* CityDetailViewController.h */,
 				4F12CDBB1A02EB47002D45A1 /* CityDetailViewController.m */,
+				4F2BE99B1A03014800E78657 /* WikipediaViewController.h */,
+				4F2BE99C1A03014800E78657 /* WikipediaViewController.m */,
 				4F12CDB91A02E5A8002D45A1 /* Model */,
 				4F12CD9A1A02E363002D45A1 /* Main.storyboard */,
 				4F12CD9D1A02E363002D45A1 /* Images.xcassets */,
@@ -241,6 +246,7 @@
 				4F12CD961A02E363002D45A1 /* AppDelegate.m in Sources */,
 				4F12CDB81A02E5A4002D45A1 /* City.m in Sources */,
 				4F12CDBC1A02EB47002D45A1 /* CityDetailViewController.m in Sources */,
+				4F2BE99D1A03014800E78657 /* WikipediaViewController.m in Sources */,
 				4F12CD931A02E363002D45A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +438,7 @@
 				4F12CDB21A02E363002D45A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F12CDB31A02E363002D45A1 /* Build configuration list for PBXNativeTarget "Code Challenge 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +447,7 @@
 				4F12CDB51A02E363002D45A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
