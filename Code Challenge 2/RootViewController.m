@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "CityDetailViewController.m"
+#import "CityDetailViewController.h"
 #import "City.h"
 
 
@@ -107,10 +107,6 @@
 
 }
 
-- (IBAction)onAddButtonPressed:(UIBarButtonItem *)button
-{
-    
-}
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
