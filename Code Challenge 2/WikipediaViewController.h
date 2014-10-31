@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "City.h"
 
 @interface WikipediaViewController : UIViewController
+@property City *city;
 
 @end

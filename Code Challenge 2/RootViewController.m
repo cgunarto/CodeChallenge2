@@ -36,7 +36,7 @@
 
     City *belmont = [[City alloc] initWithName:@"Belmont"
                                      withState:@"California"
-                                     withImage:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://upload.wikimedia.org/wikipedia/commons/2/2f/Belmont_Caltrain_station.jpg"]]
+                                     withImage:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://www.menupix.com/town_img/BelmontCAHP.jpg"]]
                                        withURL:[NSURL URLWithString:@"http://en.wikipedia.org/wiki/Belmont"]];
 
     City *berkeley = [[City alloc] initWithName:@"Berkeley"
@@ -54,6 +54,7 @@
     City *city = self.cityArray[indexPath.row];
     cell.textLabel.text = city.name;
     cell.detailTextLabel.text = city.state;
+    cell.imageView.image = [[UIImage alloc] initWithData:city.image];
 
     return cell;
 }

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h> //don't need to import this, the way to add image as property is to use NSDATA
 
 @interface City : NSObject
 
