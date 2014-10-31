@@ -48,6 +48,11 @@
 
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
+
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
@@ -111,12 +116,41 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if ([segue.identifier isEqualToString:@"segue1"])
+    {
     CityDetailViewController *cityDetailVC = segue.destinationViewController;
     NSInteger rowNumber = [self.tableView indexPathForSelectedRow].row;
     City *cityChosen = [self.cityArray objectAtIndex:rowNumber];
     cityDetailVC.city = cityChosen;
+    }
+    
 }
- 
+
+//-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+//{
+//    CityDetailViewController *cityDetailVC = segue.destinationViewController;
+//    NSInteger rowNumber = indexPath.row;
+//    City *cityChosen = [self.cityArray objectAtIndex:rowNumber];
+//    cityDetailVC.city = cityChosen;
+//    [self performSegueWithIdentifier: @"segue1" sender: self];
+//}
+
+//- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSInteger checkmarkedRow = indexPath.row;
+//    // In cellForRow... we check this variable to decide where we put the checkmark
+//    checkmarkedRow = indexPath.row;
+//
+//    // We reload the table view and the selected row will be checkmarked
+//    [tableView reloadData];
+//
+//    // We select the row without animation to simulate that nothing happened here :)
+//    [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+//
+//    // We deselect the row with animation
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//}
+
 
 
 

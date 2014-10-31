@@ -39,25 +39,28 @@
 
 - (IBAction)onEditButtonPressed:(UIBarButtonItem *)sender
 {
-    if ([sender.title isEqualToString:@"Edit"])
+    self.cityNameTextField.hidden = !self.cityNameTextField;
+    self.stateNameTextField.hidden = !self.stateNameTextField;
+    self.cityNameLabel.hidden = !self.cityNameLabel.hidden;
+    self.stateNameLabel.hidden = !self.stateNameLabel.hidden;
+
+    if ([self.editButton.title isEqualToString:@"Edit"])
     {
-        self.stateNameTextField.hidden = NO;
-        self.cityNameTextField.hidden = NO;
         self.editButton.title = @"Done";
     }
 
+
     else
     {
+        self.editButton.title = @"Done";
         self.city.name = self.cityNameTextField.text;
-        self.city.state = self.cityNameTextField.text;
-
-        self.stateNameTextField.hidden = NO;
-        self.cityNameTextField.hidden = NO;
-        self.stateNameTextField.text = @"";
+        self.city.state = self.stateNameTextField.text;
+        self.cityNameLabel.text = self.city.name;
+        self.stateNameLabel.text = self.city.state;
         self.cityNameTextField.text = @"";
-
-        self.editButton.title = @"Edit";
-
+        self.stateNameTextField.text = @"";
+        self.cityNameTextField.hidden = YES;
+        self.stateNameTextField.hidden = YES;
     }
 }
 
@@ -74,6 +77,7 @@
         wikiVC.city = self.city;
     }
 }
+
 
 
 

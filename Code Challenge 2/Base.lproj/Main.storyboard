@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="Qq5-rq-6ll" detailTextLabel="Wa6-dx-IBR" style="IBUITableViewCellStyleSubtitle" id="SIb-b0-Wq8">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="cell" textLabel="Qq5-rq-6ll" detailTextLabel="Wa6-dx-IBR" style="IBUITableViewCellStyleSubtitle" id="SIb-b0-Wq8">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SIb-b0-Wq8" id="qNZ-xI-nnq">
@@ -75,6 +75,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="810" y="362"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uV1-pp-04K">
+            <objects>
+                <viewController id="5Rm-oe-fBA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cAT-p4-Gih"/>
+                        <viewControllerLayoutGuide type="bottom" id="x8p-ci-35U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aKm-0g-ECQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sQ-UN-Mi8">
+                                <rect key="frame" x="0.0" y="68" width="320" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4sQ-UN-Mi8" firstAttribute="top" secondItem="cAT-p4-Gih" secondAttribute="bottom" constant="48" id="eFN-kV-iuH"/>
+                            <constraint firstItem="x8p-ci-35U" firstAttribute="top" secondItem="4sQ-UN-Mi8" secondAttribute="bottom" id="pas-GV-Ldw"/>
+                            <constraint firstItem="4sQ-UN-Mi8" firstAttribute="leading" secondItem="aKm-0g-ECQ" secondAttribute="leadingMargin" constant="-16" id="u5o-9A-zAp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4sQ-UN-Mi8" secondAttribute="trailing" constant="-16" id="vFh-hh-DDg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sI-Oc-eVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="1012"/>
         </scene>
         <!--City Detail VC-->
         <scene sceneID="kFN-02-f31">
@@ -165,7 +195,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="City Detail VC" id="uHR-fM-yXa">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="iOm-iG-qNA">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="iOm-iG-qNA">
                             <connections>
                                 <action selector="onEditButtonPressed:" destination="hkK-ZE-Kmq" id="7gp-il-aIp"/>
                             </connections>

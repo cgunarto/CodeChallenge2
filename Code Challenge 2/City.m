@@ -22,4 +22,9 @@
 }
 
 
+- (void)getCityURL
+{
+    [self.delegate checkCityURL:self.url];
+}
+
 @end
